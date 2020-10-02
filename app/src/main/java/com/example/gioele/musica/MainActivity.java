@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 File sourceFile = new File(txt.getText().toString());
                 try {
                     file = new MP3File(sourceFile);
+                    file = file.toArrayList(); // trasformazione dei file in array list per ottimizare le operazioni
                 }catch(Exception e ){
 
                 }
