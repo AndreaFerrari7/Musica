@@ -20,6 +20,9 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
+        
+        First first = new First();
+        assertEquals(first.getN(), 50);
 
         assertEquals("com.example.gioele.musica", appContext.getPackageName());
     }
